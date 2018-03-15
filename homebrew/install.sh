@@ -14,6 +14,8 @@ then
   if test "$(uname)" = "Darwin"
   then
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  else
+    echo "  Not running macos - ignoring homebrew install"
   fi
 fi
 
