@@ -1,4 +1,24 @@
+autocmd!
+
 syntax on
+
+filetype off
+set nocompatible
+
+" Vundle all the way
+set rtp+=~/.vim/bundle/Vundle.vim
+let g:vundle_default_git_proto='git'
+call vundle#begin()
+
+" Let Vundle manage Vundle
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'kien/ctrlp.vim'
+Plugin 'Lokaltog/vim-easymotion'
+
+call vundle#end()
+
+set background=light
 
 " Wrap gitcommit file types at the appropriate length
 filetype indent plugin on
