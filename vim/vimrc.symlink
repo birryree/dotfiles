@@ -15,12 +15,23 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'kien/ctrlp.vim'
 Plugin 'Lokaltog/vim-easymotion'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 call vundle#end()
 
 set t_Co=256
 
+" Airline configuration
+let g:airline_powerline_fonts = 1
+let g:airline_theme='murmur'
+
 set background=light
+if has('gui_running')
+    colorscheme irblack
+else
+    colorscheme irblack
+endif
 
 " Wrap gitcommit file types at the appropriate length
 filetype indent plugin on
