@@ -1,7 +1,7 @@
 brew 'coreutils'
 brew 'gnu-sed'
 brew 'findutils'
-brew 'irssi'
+brew 'weechat', args: ['with-python@2']
 brew 'tmux'
 brew 'jq'
 brew 'readline'
